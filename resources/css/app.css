@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply font-semibold ;
+}
+
+thead {
+    @apply border-b-4 border-base-300 bg-base-200/50 font-bold ;
+}
+
+.textarea-bordered,
+.file-input.bordered,
+.select-bordered,
+.input-bordered{
+    @apply border-2 border-base-300;
+}
+
+.textarea-error,
+.file-input.error,
+.select-error,
+.input-error{
+    @apply border-2 border-error;
+}
+
+.card{
+    @apply bg-base-100 border-2 border-base-300;
+}
+
+.page-wrapper{
+    @apply container w-full max-w-6xl p-4 mx-auto space-y-6;
+}
+
+.table-wrapper{
+    @apply bg-base-100 border-2 border-base-300 overflow-x-auto rounded-lg px-3 py-3; 
+}
+
+.active{
+    @apply bg-pink-400;
+}
+
+.main-container{
+    @apply container mx-auto space-y-2 ;
+}
+
+.hero-container{
+    @apply font-bold
+}
